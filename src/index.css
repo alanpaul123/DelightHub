@@ -1,0 +1,748 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  /* Hide horizontal scrollbar */
+  overflow-x: hidden;
+}
+/* Nav Bar  */
+.logo {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #228be6;
+  transform: translateY(-10px);
+}
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+  align-items: center;
+}
+
+#check {
+  display: none;
+}
+
+.icons .menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.icons .cross {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* .cross,
+.menu {
+  border: none;
+  font-size: 20px;
+  color: white;
+  display: none;
+} */
+
+.fa-solid {
+  background-color: none;
+}
+.hero {
+  height: 80vh;
+
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.mainHero {
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://fnbreport.ph/wp-content/uploads/2021/05/Doughnuts-Redefining-the-American-comfort-food-classic-1024x739.jpg"); */
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-variety-of-doughnuts-next-to-coffee-image_2910526.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+}
+.hero {
+  position: relative;
+}
+.p1 {
+  font-size: 80px;
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.boxBtn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 30px;
+}
+.btn-1,
+.btn-2 {
+  padding: 10px 40px;
+  border: none;
+  background-color: #4dabf7;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rbox {
+  width: 25%;
+  height: auto;
+
+  /* margin-top: 30px; */
+  padding: 10px;
+  height: 450px;
+}
+.rbox img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+.rbox p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.rp {
+  font-family: "Dancing Script", cursive;
+  font-size: 23px;
+  color: red;
+}
+
+.recipe {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.obName {
+  padding: 10px 20px;
+  background-color: #f59f00;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////// */
+/* OFFERS */
+.offers {
+  height: 60vh;
+
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://img.freepik.com/free-photo/top-view-delicious-sand-cookies-with-fresh-sliced-oranges-dark-background-cookie-sugar-fruit-sweet-citrus-biscuit_140725-99307.jpg"); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://img.freepik.com/premium-photo/white-donut-with-brown-sprinkles-sits-table-cup-coffee_882954-7887.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712880000&semt=ais");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.off {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Precip {
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.off p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+.off p:first-child {
+  font-size: 40px;
+  font-weight: 600;
+}
+.off p:nth-child(2n) {
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.off p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+/* Word */
+.word {
+  position: relative;
+  height: 50vh;
+
+  margin-top: 50px;
+}
+.wordT {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wordT p {
+  text-align: center;
+}
+.wordT p:first-child {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Dancing Script", cursive;
+  color: #1c7ed6;
+  font-weight: 600;
+}
+
+.wordT h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.wordT p:last-child {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Dancing Script", cursive;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* Food Boxes */
+.fbox {
+  width: 21%;
+  height: auto;
+
+  padding: 6px 8px;
+  margin-bottom: 20px;
+}
+/* .fbox img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+} */
+
+.imgBox {
+  width: 100%;
+  height: 250px;
+  /* border-radius: 10px; */
+  background-color: #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBox img {
+  width: 90%;
+  height: 230px;
+  border-radius: 5px;
+}
+.fbox h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.fbox p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.foodBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+/* BirthDay Box */
+.birthBox {
+  height: 60vh;
+
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://t4.ftcdn.net/jpg/07/03/67/87/360_F_703678738_12ogehVwkrls6t4NPFWnQqoVDN5EWOe1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center;
+  background-attachment: fixed;
+}
+.c1 {
+  padding: 20px;
+}
+
+.cBtn {
+  padding: 10px 30px;
+  border: none;
+  background-color: #af8260;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.c1 h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 20px;
+}
+.c1 p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Footer  */
+footer {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://i.pinimg.com/736x/42/a8/c1/42a8c1246ea80203ee8a901068fbef23.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer ul {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.fa-brands {
+  font-size: 25px;
+}
+.fooLink {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.fooLink h5 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.h {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.sear {
+  border: 1px solid white;
+}
+
+.sear input {
+  padding: 5px;
+}
+.faS {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.search h3 {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.search {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.fh {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.b3 {
+  background-color: #e8dfca !important;
+}
+
+.imgB {
+  border-radius: 10px;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+/* Information */
+.bexp {
+  display: flex;
+  /* margin-top: 70px; */
+  gap: 50px;
+  justify-content: space-around;
+  background-color: #f1f3f5;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.beng {
+  /* border: 1px solid black; */
+  width: 42%;
+  position: relative;
+}
+.cexp {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  padding-top: 30px;
+}
+.cexp h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.cexp p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.coffImg {
+  width: 43%;
+}
+.coffImg img {
+  width: 95%;
+  height: 500px;
+}
+
+.Kma {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.km {
+  padding: 10px 20px;
+  border: none;
+  background-color: #af8260;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+.info {
+  margin-top: 100px;
+}
+
+.b2 {
+  background-color: #2f9e44;
+  color: white;
+}
+/* /////////////////////////////////////////////////////////////////////////////////
+/* //////////////////////////////////////////////////////////////// */
+/* Font-Size */
+
+@media (max-width: 770px) {
+  nav a:hover {
+    color: #1c7ed6;
+    font-weight: 700;
+  }
+  .header {
+    position: relative;
+    padding-bottom: 20px;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 50px;
+    height: 80vh;
+    display: none;
+    background-color: white;
+    padding-bottom: 30px;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+  }
+
+  .icons .menu {
+    display: block;
+    cursor: pointer;
+  }
+  #check:checked ~ nav {
+    display: flex;
+  }
+  #check:checked ~ .icons .menu {
+    display: none;
+  }
+
+  #check:checked ~ .icons .cross {
+    display: block;
+  }
+
+  .wordT h1 {
+    font-size: 25px;
+  }
+
+  .wordT p:first-child {
+    font-size: 20px;
+  }
+  .wordT p:last-child {
+    font-size: 20px;
+  }
+
+  .fbox {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .foodBox {
+    display: block;
+  }
+}
+
+@media (max-width: 810px) {
+  .p1 {
+    top: 40%;
+    font-size: 60px;
+  }
+  .rbox {
+    height: 500px;
+    margin-bottom: 20px;
+  }
+
+  .coffImg {
+    display: none;
+  }
+  .beng {
+    width: 90%;
+    height: 500px;
+  }
+  .beng h1 {
+    font-size: 35px;
+  }
+  .beng p {
+    font-size: 20px;
+  }
+  .bexp {
+    display: block;
+  }
+
+  .cexp {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 610px) {
+  .p1 {
+    font-size: 50px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .btn-1,
+  .btn-2 {
+    padding: 10px 20px;
+  }
+  .rbox {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .recipe {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .off {
+    right: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 30%;
+  }
+  .off p:first-child {
+    font-size: 30px;
+  }
+
+  .cups {
+    width: 100%;
+    padding: 10px;
+  }
+  .c1 h1 {
+    font-size: 30px;
+  }
+  .c1 p {
+    font-size: 20px;
+  }
+
+  .c1 hr {
+    display: none;
+  }
+
+  /* .c2 {
+    top: 90%;
+  } */
+}
+
+@media (max-width: 240px) {
+  .off {
+    top: 10%;
+  }
+
+  .wordT h1 {
+    font-size: 20px;
+  }
+
+  .wordT p:first-child {
+    font-size: 16px;
+  }
+  .wordT p:last-child {
+    font-size: 16px;
+  }
+  .rbox {
+    height: auto;
+    /* border: 1px solid black; */
+  }
+  .btn-1,
+  .btn-2 {
+    padding: 10px;
+  }
+  .p1 {
+    font-size: 30px;
+  }
+  .c1 {
+    padding: 0px;
+  }
+
+  .icons .menu {
+    font-size: 20px;
+  }
+  .Precip {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 350px) {
+  .word {
+    height: 60vh;
+  }
+  .fbox {
+    width: 90%;
+  }
+  .c1 h1 {
+    font-size: 25px;
+  }
+  .c1 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .fa-brands {
+    font-size: 16px;
+  }
+  .a {
+    font-size: 20px;
+  }
+
+  .h {
+    font-size: 13px;
+  }
+  .search {
+    display: none;
+  }
+  .beng h1 {
+    font-size: 25px;
+  }
+  .beng p {
+    font-size: 16px;
+  }
+}
+
+/* typing */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: azure;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e67700;
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
